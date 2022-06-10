@@ -4,7 +4,7 @@ pool: $(poolName)
 
 variables:
   buildConfiguration: 'Release'
-  projectPath: '..\functions.csproj'
+  projectPath: 'src/functions.csproj'
 
 stages:
 - stage: Build

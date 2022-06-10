@@ -20,7 +20,7 @@ steps:
     dotnet tool install -g --configfile disable_nuget.config --add-source ./src/ArmTemplates/bin/Release armtemplates
   displayName: 'Install DevOps resourcekit'
 - script: |
-    cd definitions
+    cd src/definitions
     mkdir Templates
     apim-templates create --configFile apim-config.yml   
     dir 

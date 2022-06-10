@@ -27,4 +27,4 @@ steps:
     scriptType: ps
     scriptLocation: inlineScript
     inlineScript: |
-      az deployment group create --resource-group $(apimResourceGroup) --name teamone  --template-file $(Build.SourcesDirectory)/bin/teamone/src/definitions/Templates/todo.api.template.json --parameters apimServiceName=$(apimName)  --parameters todo-ServiceUrl=$(todoServiceUrl)
+      az deployment group create --resource-group $(apimResourceGroup) --name teamone  --template-file $(Build.SourcesDirectory)/bin/teamone/src/definitions/todo.api.template.json --parameters apimServiceName=$(apimName)  --parameters todo-ServiceUrl=$(todoServiceUrl)

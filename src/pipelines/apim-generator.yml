@@ -27,7 +27,7 @@ steps:
   displayName: 'Create Templates'    
 - task: CopyFiles@2
   inputs:
-    contents: 'definitions/**'
+    contents: 'src/definitions/**'
     targetFolder: $(Build.ArtifactStagingDirectory)
 - task: UniversalPackages@0
   displayName: Universal Publish
